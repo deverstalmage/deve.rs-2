@@ -13,6 +13,11 @@
     "jade": "^1.8.1"
   },
   "devDependencies": {
-    "coffee-script": "^1.8.0"
+    "coffee-script": "^1.8.0",
+    "browserify": "^6.3.3",
+    "vinyl-source-stream": "^1.0.0",
+    "gulp-load-plugins": "^0.7.1",
+    "browserify-shim": "^3.8.0",
+    "penthouse": "^0.2.51"
   }
 }
