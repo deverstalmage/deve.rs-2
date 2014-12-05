@@ -3,9 +3,7 @@ var $;
 
 $ = require('jquery');
 
-$(function() {
-  return console.log('ayyyooooooo');
-});
+$(function() {});
 
 
 

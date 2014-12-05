@@ -8,6 +8,7 @@ projects = require './controllers/projects'
 
 app.set 'view engine', 'jade'
 app.use express.static __dirname + '/static'
+app.use '/images', express.static __dirname + '/static/images/compressed'
 app.use compression()
 
 home.controller app

@@ -1,2 +1,5 @@
 * {
   box-sizing: border-box; }
+
+body {
+  background: url(../images/bg.jpg); }

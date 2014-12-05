@@ -57,8 +57,8 @@ gulp.task 'critical-css', ['styles'], ->
     return
 
 gulp.task 'images', ->
-  gulp.src './static/uncompressed/images/**/*.{jpg,jpeg,png,gif,svg}'
-    .pipe gulp.dest './static/compressed/images'
+  gulp.src './static/images/uncompressed/**/*.{jpg,jpeg,png,gif,svg}'
+    .pipe gulp.dest './static/images/compressed'
     .pipe plugins.size()
   return
 
