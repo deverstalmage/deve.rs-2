@@ -1,5 +1,6 @@
 h1{
-  font-weight: normal; }
+  font-weight: normal;
+  margin: 1.5em 0 0.5em 0; }
 
 h1 {
   margin: 0;
@@ -95,6 +96,8 @@ nav {
     float: right; }
   nav li {
     margin-bottom: 0.5rem; }
+    nav li:last-child {
+      margin-bottom: 0; }
   nav a {
     font-size: 1.25rem;
     text-decoration: none;

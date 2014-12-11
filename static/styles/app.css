@@ -1,5 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
+  font-weight: normal;
+  margin: 1.5em 0 0.5em 0; }
+
+ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
+  margin: 0.5em 0; }
 
 h1 {
   margin: 0;
@@ -79,6 +83,10 @@ body {
 .clear {
   clear: both; }
 
+img.icon {
+  vertical-align: middle;
+  margin: 0 2px; }
+
 .social {
   padding: 0;
   margin: 0;
@@ -124,6 +132,8 @@ nav {
     float: right; }
   nav li {
     margin-bottom: 0.5rem; }
+    nav li:last-child {
+      margin-bottom: 0; }
   nav a {
     font-size: 1.25rem;
     text-decoration: none;
@@ -138,3 +148,8 @@ nav {
   border-radius: 50% 50%;
   max-width: 100px;
   float: right; }
+
+.projects img.icon {
+  width: 16px;
+  height: auto;
+  margin-left: 5px; }
