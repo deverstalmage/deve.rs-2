@@ -3,7 +3,6 @@ module.exports.controller = (app) ->
     data = {}
 
     data.title = 'Portfolio of Devers Talmage'
-    data.name = 'devers'
-    data.location = 'northampton'
-    
+    data.slug = 'home'
+
     res.render 'home', data

@@ -1,8 +1,11 @@
 doctype html
 html(lang='en')
   include _header
-  body
-    include _nav
-    section.content
-      block content
+  body(class=slug)
+    include _social
+    main
+      include _nav
+      section.content.fade-in
+        block content
+      .clear
     include _scripts

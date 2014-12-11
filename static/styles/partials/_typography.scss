@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0;
+  
+  font: {
+    family: 'Avenir Next', 'Century Gothic', sans-serif;
+    weight: 100;
+    size: 2.5rem;
+  }
+
+  letter-spacing: 1px;
+}
+
+body {
+  font: {
+    family: 'Avenir Next', 'Century Gothic', sans-serif;
+    size: 1em;
+  }
+}
+
+nav {
+  font: {
+    family: 'Avenir Next', 'Century Gothic', sans-serif;
+    size: 1rem;
+  }
+}
+
+a {
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  text-decoration: underline;
+
+  &:hover {
+    color: #aaa;
+    text-decoration: none;
+  }
+}
+
+p, li {
+  line-height: 1.5rem;
+}

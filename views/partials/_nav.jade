@@ -1,8 +1,10 @@
 nav
   ul
     li
-      a(href='/') home
+      a(class=slug == 'home' ? 'active' : undefined, href='/') home
     li
-      a(href='/skills') skills
+      a(class=slug == 'skills' ? 'active' : undefined, href='/skills') skills
     li
-      a(href='/projects') projeccts
+      a(class=slug == 'projects' ? 'active' : undefined, href='/projects') projects
+    li
+      a(class=slug == 'contact' ? 'active' : undefined, href='/contact') contact

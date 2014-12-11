@@ -3,5 +3,6 @@ module.exports.controller = (app) ->
     data = {}
 
     data.title = 'Skills'
+    data.slug = data.title.toLowerCase()
 
     res.render 'skills', data

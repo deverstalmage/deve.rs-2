@@ -2,6 +2,72 @@
   box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
-  background: url(../images/bg.jpg);
+
+  background: {
+    image: url(../images/bg2.jpg);
+    repeat: no-repeat;
+    position: center center;
+    attachment: fixed;
+    size: cover;
+    color: #333;
+  }
+
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  li {
+    display: inline-block;
+    margin: 0.25rem;
+  }
+
+  a {
+    img {
+      transition: transform 0.1s ease-in-out;
+    }
+  }
+
+  a:hover {
+    img {
+      transform: scale(1.25);
+    }
+  }
+}
+
+main {
+  margin: 0 auto 10em auto;
+  position: relative;
+  top: 25%;
+}
+
+
+
+.content {
+  width: 50%;
+  float: left;
+  padding: 0 0 0 3rem;
+}
+
+ul {
+  list-style-position: outside;
 }
