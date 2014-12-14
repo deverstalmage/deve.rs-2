@@ -3,3 +3,4 @@ node_modules
 static/scripts/*.js
 static/styles/*.css
 static/images/compressed
+conf.coffee
