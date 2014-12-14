@@ -20,6 +20,10 @@ body {
     color: #333;
   }
 
+  @media #{$small-size} {
+    background-size: auto 100%;
+  }
+
   color: #fff;
 }
 
