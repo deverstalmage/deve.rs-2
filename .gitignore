@@ -4,3 +4,4 @@ static/scripts/*.js
 static/styles/*.css
 static/images/compressed
 conf.coffee
+static/styles/critical.css
