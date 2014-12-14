@@ -118,6 +118,11 @@ main {
 ul {
   list-style-position: outside; }
 
+hr {
+  margin: 4em 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5); }
+
 nav {
   width: 33%;
   float: left;
@@ -153,3 +158,6 @@ nav {
   width: 16px;
   height: auto;
   margin-left: 5px; }
+
+.brief li {
+  margin: 2em 0; }
