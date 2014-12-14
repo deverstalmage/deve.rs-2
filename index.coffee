@@ -7,7 +7,7 @@ skills = require './controllers/skills'
 projects = require './controllers/projects'
 contact = require './controllers/contact'
 
-port = process.env.PORT || 3000;
+port = process.env.DEVERS_PORT || 3000;
 
 app.set 'view engine', 'jade'
 app.use express.static __dirname + '/static'
