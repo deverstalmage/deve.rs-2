@@ -7,6 +7,8 @@ skills = require './controllers/skills'
 projects = require './controllers/projects'
 contact = require './controllers/contact'
 
+port = process.env.PORT || 3000;
+
 app.set 'view engine', 'jade'
 app.use express.static __dirname + '/static'
 app.use '/images', express.static __dirname + '/static/images/compressed'
@@ -17,7 +19,7 @@ skills.controller app
 projects.controller app
 contact.controller app
 
-server = app.listen 80, ->
+server = app.listen port, ->
   host = server.address().address
   port = server.address().port
   console.log 'an example app running on %s:%s', host, port
