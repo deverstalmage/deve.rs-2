@@ -17,7 +17,7 @@ skills.controller app
 projects.controller app
 contact.controller app
 
-server = app.listen 3000, ->
+server = app.listen 80, ->
   host = server.address().address
   port = server.address().port
   console.log 'an example app running on %s:%s', host, port
