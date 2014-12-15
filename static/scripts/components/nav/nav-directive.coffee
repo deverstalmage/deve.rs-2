@@ -1,8 +1,10 @@
 angular.module 'deve.rs.directives.nav', []
-  .diretive 'deversNav', ($routeParams) ->
+  .directive 'deversNav', ($routeParams) ->
     link = (scope, element, attrs) ->
       scope.slug = $routeParams.slug
+      console.log element
 
-    return
+    return {
       restrict: 'A'
       link: link
+    }
