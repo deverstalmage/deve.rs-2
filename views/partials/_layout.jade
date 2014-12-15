@@ -1,11 +1,14 @@
-doctype html
-html(lang='en')
-  include _header
-  body(class=slug)
-    include _social
-    main
-      include _nav
-      section.content.fade-in
-        block content
-      .clear
-    include _scripts
+- if(!angularTpl)
+  doctype html
+  html(lang='en')
+    include _header
+    body(class=slug)
+      include _social
+      main
+        include _nav
+        section.content.fade-in(ng-view)
+          block content
+        .clear
+      include _scripts
+- else
+  block content

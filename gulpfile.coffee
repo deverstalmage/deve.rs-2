@@ -62,6 +62,22 @@ gulp.task 'images', ->
     .pipe plugins.size()
   return
 
+gulp.task 'templates', ->
+  locals =
+    angularTpl: true
+
+  gulp.src [
+    './views/**/index.jade'
+  ]
+    .pipe plugins.jade
+      locals: locals
+    .pipe plugins.angularTemplatecache 'templates.js',
+      module: 'deve.rs.templates'
+      standalone: true
+    .pipe gulp.dest './static/scripts'
+    .pipe plugins.size
+      title: 'templates'
+
 gulp.task 'watch', ->
   gulp.watch [
     './views/**/*.jade'
