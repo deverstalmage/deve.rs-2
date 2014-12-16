@@ -1,8 +1,8 @@
 $ = jQuery = require 'jquery'
+attachFC = require 'fastclick'
 require 'angular'
 require 'angular-route'
 require 'angular-animate'
-require 'angular-touch'
 
 require './templates'
 
@@ -29,9 +29,10 @@ angular
   .module 'deve.rs', [
     'ngRoute'
     'ngAnimate'
-    'ngTouch'
     'deve.rs.templates'
     'deve.rs.directives.nav'
     'deve.rs.directives.view'
   ]
   .config Config
+  .run ->
+    attachFC document.body
