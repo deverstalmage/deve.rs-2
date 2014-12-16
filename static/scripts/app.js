@@ -27029,11 +27029,12 @@ var styleDirective = valueFn({
 
 !window.angular.$$csp() && window.angular.element(document).find('head').prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}</style>');
 },{}],4:[function(require,module,exports){
-angular.module('deve.rs.directives.nav', []).directive('deversNav', function($routeParams) {
+angular.module('deve.rs.directives.nav', []).directive('deversNav', function($location) {
   var link;
   link = function(scope, element, attrs) {
-    scope.slug = $routeParams.slug;
-    return console.log(element);
+    return scope.isActive = function(slug) {
+      return slug === $location.path();
+    };
   };
   return {
     restrict: 'A',

@@ -1,10 +1,10 @@
 nav(devers-nav)
   ul
     li
-      a(class=slug == 'home' ? 'active' : undefined, href='/', ng-class='{active: (slug == "home")}') home
+      a(class=slug == 'home' ? 'active' : undefined, href='/', ng-class='{active: isActive("/")}', ng-click='log()') home
     li
-      a(class=slug == 'skills' ? 'active' : undefined, href='/skills' ng-class='{active: (slug == "skills")}') skills
+      a(class=slug == 'skills' ? 'active' : undefined, href='/skills' ng-class='{active: isActive("/skills")}') skills
     li
-      a(class=slug == 'projects' ? 'active' : undefined, href='/projects' ng-class='{active: (slug == "projects")}') projects
+      a(class=slug == 'projects' ? 'active' : undefined, href='/projects' ng-class='{active: isActive("/projects")}') projects
     li
-      a(class=slug == 'contact' ? 'active' : undefined, href='/contact' ng-class='{active: (slug == "contact")}') contact
+      a(class=slug == 'contact' ? 'active' : undefined, href='/contact' ng-class='{active: isActive("/contact")}') contact

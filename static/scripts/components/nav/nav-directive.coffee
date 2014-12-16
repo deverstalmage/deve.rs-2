@@ -1,8 +1,8 @@
 angular.module 'deve.rs.directives.nav', []
-  .directive 'deversNav', ($routeParams) ->
+  .directive 'deversNav', ($location) ->
     link = (scope, element, attrs) ->
-      scope.slug = $routeParams.slug
-      console.log element
+      scope.isActive = (slug) ->
+        return slug == $location.path()
 
     return {
       restrict: 'A'
