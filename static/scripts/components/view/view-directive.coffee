@@ -5,7 +5,6 @@ angular.module 'deve.rs.directives.view', []
       first = true
       $rootScope.$on '$routeChangeSuccess', (event, next, current) ->
         if not first
-          console.log 'changed route to: ' + next.slug
           element.html $templateCache.get next.slug + '/index.html'
         first = false
 
