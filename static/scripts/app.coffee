@@ -1,10 +1,12 @@
-# $ = jQuery = require 'jquery'
+$ = jQuery = require 'jquery'
 require 'angular'
 require 'angular-route'
+require 'angular-animate'
 
 require './templates'
 
 require './components/nav/nav-directive'
+require './components/view/view-directive'
 
 Config = ($routeProvider, $locationProvider) ->
   $routeProvider
@@ -25,7 +27,9 @@ Config = ($routeProvider, $locationProvider) ->
 angular
   .module 'deve.rs', [
     'ngRoute'
-    'deve.rs.templates',
+    'ngAnimate'
+    'deve.rs.templates'
     'deve.rs.directives.nav'
+    'deve.rs.directives.view'
   ]
   .config Config

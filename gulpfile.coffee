@@ -88,6 +88,7 @@ gulp.task 'watch', ->
   gulp.watch [
     './static/scripts/**/*.coffee'
   ], ['browserify']
+  gulp.watch './views/**/*.jade', ['templates']
   gulp.watch './static/styles/**/*.scss', ['critical-css']
   gulp.watch './static/images/uncompressed/**/*.{jpg,png,jpeg,gif}', ['images']
   return
