@@ -33,6 +33,7 @@ p, li {
   line-height: 1.5rem; }
 
 @-webkit-keyframes fadeIn {
+
   from {
     opacity: 0;
     -webkit-transform: translateY(-5px);

@@ -1,8 +1,10 @@
 angular.module 'deve.rs.directives.nav', []
-  .directive 'deversNav', ($location) ->
+  .directive 'deversNavItem', ($rootScope, $location) ->
     link = (scope, element, attrs) ->
-      scope.isActive = (slug) ->
-        return slug == $location.path()
+      href = element.attr 'href'
+      $rootScope.$on '$locationChangeSuccess', ->
+        element.removeClass 'active'
+        element.addClass 'active' if href == $location.path()
 
     return {
       restrict: 'A'
