@@ -11,6 +11,7 @@ port = process.env.DEVERS_PORT || 3000;
 
 app.set 'view engine', 'jade'
 app.use express.static __dirname + '/static'
+app.use express.static __dirname + '/blog'
 app.use '/images', express.static __dirname + '/static/images/compressed'
 app.use compression()
 
